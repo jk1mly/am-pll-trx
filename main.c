@@ -322,9 +322,9 @@ void main(void)
 
         ad_frq = ADC_GetConversion(0);
         ad_frq = ad_frq / 256;
-        freq = ad_frq + 250;        // 250 - 450(420)
-        if (freq > 450){
-            freq = 450;
+        freq = ad_frq + 200;        // 200 - 400(380)
+        if (freq > 400){
+            freq = 400;
         }
         
         disp_FREQ(freq);
